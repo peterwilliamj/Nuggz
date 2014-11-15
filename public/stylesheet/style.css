@@ -1,0 +1,230 @@
+/*.iphone {*/
+    /*height: 1000px;*/
+    /*width: 400px;*/
+/*}*/
+
+/*The following is for the home.html page*/
+.container {
+    width: 600px;
+}
+
+.picSize {
+    max-width: 400px;
+    max-height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+
+}
+.title {
+    color: gold;
+    font-size: 80px;
+}
+/*.profile-menu {*/
+    /*width: 20%;*/
+    /*position: absolute;*/
+    /*top: 13%;*/
+    /*right: 28%;*/
+    /*border: 1px solid lightgray;*/
+    /*background: white;*/
+    /*box-shadow: 5px 5px 5px lightgray;*/
+    /*z-index: 100;*/
+/*}*/
+.profile-menu li {
+    list-style-type: none;
+    border-bottom: 1px solid lightgray;
+    margin-right: 40px;
+}
+.profile-menu a {
+    font-size: 20px;
+    color: black;
+}
+.profile-menu a:hover {
+    color: gold;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.black {
+    background: black;
+    color: white;
+    margin-right: 15px;
+}
+.gold {
+    background: gold;
+    color: black;
+}
+.btn-success {
+    border-color: darkgray;
+    width: 50%;
+    font-size: 25px;
+}
+.btn-danger {
+    border-color: darkgray;
+    width: 50%;
+    font-size: 25px;
+}
+
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.gift {
+    height: 65px;
+    width: 75px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.profile_pic {
+    height: 80px;
+    width: 80px;
+    margin-right: 10px;
+    margin-top: 35px;
+    border: solid gold 4px;
+}
+.user-name {
+    margin-top: 95px;
+}
+.modal-font {
+    font-size: 30px;
+}
+.newList {
+    margin-top: 40px;
+}
+p {
+    margin-top: 80px;
+}
+.white-bottom {
+    background: #ffffff;
+    width: 32.8%;
+    margin-top: 20px;
+    height: 60px;
+    border: solid gray 4px;
+}
+.bottom-nav {
+    height: 60px;
+    width: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*The following is for the friends.html page*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*The following is for the lists.html page*/
+
+.lists-page {
+    background: gold;
+    width: 100%;
+    font-size: 40px;
+    color: #000000;
+    border: solid #000000 4px;
+    padding-left: 10px;
+}
+.user-lists {
+    border-right: solid #000000 4px;
+    border-left: solid #000000 4px;
+    border-bottom: solid #000000 4px;
+    border-top: none;
+}
+.lists-title {
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*The following is for the intro.html page*/
+.intro-black-font {
+    font-size: 120;
+}

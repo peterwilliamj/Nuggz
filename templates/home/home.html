@@ -1,0 +1,72 @@
+<div class="container">
+    <div class="nav-header group">
+        <div class="logo pull-left">
+            <h1 class="title">Nuggz <a href="#/intro"><img class='gift pull-right' src='http://www.chatelaine.com/wp-content/uploads/2012/11/gold-gift-box-660x576.jpg'/></a>
+            </h1>
+        </div>
+
+
+        <!-- Profile Pic Dropdown menu -->
+        <img class="pull-right profile_pic" ng-click="profileMenu = !profileMenu" src="https://lh5.googleusercontent.com/-UAem77JlhyA/AAAAAAAAAAI/AAAAAAAAAQI/o23SBwAFa14/s120-c/photo.jpg"/>
+
+
+
+                <div class="profile-menu" ng-show="profileMenu">
+                    <ul>
+                        <li><a href="#">Refine search</a></li>
+                        <li><a href="#">Change user info</a></li>
+                        <!--<li><a href="#">Take a Nuggz survey</a></li>-->
+                        <li><a href="#">Account settings</a></li>
+
+                    </ul>
+                </div>
+
+    </div>
+    <div class="list-group">
+
+
+        <div class="list-group-item" ng-repeat="product in products">
+            <div class="flex">
+                <button ng-click="loadNextProduct" class="btn black btn-danger :active"><strong>Not for me</strong></button>
+                <button class="btn gold btn-success" data-toggle="modal" data-target="#myModal"><strong>It's a Nugg!</strong></button>
+            </div>
+            <!-- The Modal that pops up after you click "It's a Nugg!" -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Which list would you like to add this nugg to?</h4>
+                        </div>
+                        <div class="modal-body modal-font">
+                            <div ng-repeat="list in lists">{{list}}</div>
+                            <!--<div>23rd Birthday</div>-->
+                            <!--<div>Christmas 2014</div>-->
+                            <form class="newList">
+                                Add new list: <input ng-model="listName" type="text" name="listName"><br>
+                                <input ng-click="createNewList(listName)" type="submit" value="Submit">
+                            </form>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary" ng-click="saveProduct()">Save to lists</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- underneath is the product that comes up -->
+
+            <h3>{{product.name}} <em class="pull-right">{{product.price | currency}}</em></h3>
+            <img class="picSize" ng-src="{{product.image}}" />
+            <h4>{{product.description}}</h4>
+            <h4><a ng-href="{{product.website}}">Learn more on its website.</a></h4>
+            <!-- Bottom of the screen buttons -->
+           <a href="#/lists"><button class="btn white-bottom"><img class="bottom-nav" src="http://blog.nolo.com/estateplanning/files/2012/12/gift-package.jpg"/></button></a>
+            <a href="#/"><button class="btn white-bottom"><img class="bottom-nav" src="http://materacewarszawa.com.pl/wp-content/uploads/2014/08/home66.png"/></button></a>
+            <a href="#/friends"><button class="btn white-bottom"><img class="bottom-nav" src="http://simpleicon.com/wp-content/uploads/users.svg"/></button></a>
+        </div>
+
+    </div>
+</div>
